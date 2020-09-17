@@ -1,0 +1,470 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: SimHei;
+    font-size: 14px;
+    color: #333333;
+
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.lg-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* -------------公共字体颜色-------------------*/
+.colf6 {
+    color: #ff6600;
+}
+
+
+.col1a {
+    color: #1a1a1a;
+}
+
+.col26 {
+    color: #262626;
+}
+
+.col33 {
+    color: #333333;
+}
+
+.col4d {
+
+    color: #4d4d4d;
+}
+
+.col40 {
+    color: #404040;
+}
+
+.colfd {
+    color: #f4290d;
+}
+
+.colf5 {
+    color: #ff2315;
+}
+
+.colf9 {
+
+    color: #f91616;
+}
+
+.cole3 {
+    color: #e30c02;
+}
+
+.colb3 {
+    color: #b3b3b3;
+}
+
+.col80 {
+    color: #808080;
+}
+
+.col74 {
+    color: #747474;
+}
+
+
+.tcenter {
+    text-align: center;
+}
+
+/* -------------公共背景颜色-------------------*/
+.bgf2 {
+    background-color: #f2f2f2;
+}
+
+.bgf3 {
+    background-color: #f3f3f3;
+}
+
+.bgf9 {
+    background-color: #f9f9f9;
+}
+
+/* --------------公共margin---------------*/
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt12 {
+    margin-top: 12px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml36 {
+    margin-left: 36px;
+}
+
+.ml200 {
+    margin-left: 200px;
+}
+
+.mr35 {
+    margin-right: 35px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+/*----------------公共字体--------------- */
+.fs12 {
+    font-size: 12px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs24 {
+    font-size: 24px;
+}
+
+.fs28 {
+    font-size: 28px;
+}
+
+/* --------------头部 -------------------*/
+
+header {
+    height: 114px;
+    background-color: pink;
+}
+
+header .top {
+    height: 28px;
+    line-height: 28px;
+    background-color: #101010;
+}
+
+header .top .txturl {
+    font-size: 18px;
+    color: #e6e6e6;
+}
+
+header .top .loginxbox {
+    color: #bfbfbf;
+}
+
+header .top .loginxbox a {
+    color: #ff6600;
+}
+
+/* ------------------搜索框----------------------*/
+header .search-r {
+    height: 40px;
+}
+
+header .searchbox form {
+    width: 440px;
+    height: 36px;
+    background-color: #ffffff;
+    border: solid 2px #ff6600;
+    box-sizing: border-box;
+}
+
+header .searchbox form input:first-child {
+    width: 388px;
+    height: 32px;
+    text-indent: 1em;
+
+}
+
+header .searchbox form input:last-child {
+    width: 48px;
+    height: 32px;
+    background-color: #f60;
+    background: url(../imgs/bgicon.png) no-repeat;
+    cursor: pointer;
+}
+
+/* ------------------购物车和订单-------------------- */
+header .searchbox .cartorder {
+    width: 200px;
+    height: 36px;
+    margin-left: 35px;
+}
+
+header .searchbox .cartorder {
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+header .top .logintxtbox a {
+    color: #f60;
+}
+
+header .searchbox .cartorder a:first-child {
+    width: 100px;
+    display: inline-block;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-indent: 2em;
+    background: url(../imgs/bgicon.png) no-repeat 0 -42px #ff6600;
+}
+
+header .searchbox .cartorder a:last-child {
+    display: inline-block;
+    width: 98px;
+    font-size: 16px;
+    color: #808080;
+    background-color: #ebebeb;
+    border: solid 1px #cccccc;
+    /**
+    border-box:
+    width:该值包含了border和padding以及内容区域的宽度
+    content-box:[默认]
+    width:只表示内容区域的宽度
+    */
+    box-sizing: border-box;
+}
+
+/*------------ 头部的nav-------------- */
+header nav ul li {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    color: #323232;
+}
+
+/*------------ banner部分------------ */
+#banner {
+    height: 420px;
+    background-color: skyblue;
+}
+
+#banner .navlist {
+    width: 200px;
+    height: 420px;
+    position: relative;
+}
+
+#banner .navlist li {
+    line-height: 28px;
+}
+
+#banner .navlist li:hover .submenu {
+    display: block;
+}
+
+#banner .navlist li .submenu {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 580px;
+    height: 430px;
+    display: none;
+    border: 1px solid #f60;
+    background-color: #fff;
+    z-index: 101;
+}
+
+#banner .navlist li:hover>p {
+    width: 181px;
+    background-color: #ffffff;
+    border-color: #f60;
+    border-right: 0;
+}
+
+#banner .navlist li>p {
+    position: relative;
+    padding-left: 19px;
+    border: 1px solid transparent;
+    z-index: 102;
+}
+
+#banner .navlist li a {
+    color: #1a1a1a;
+    font-family: MicrosoftYaHei;
+}
+
+#banner .navlist li .submenu .sub-main {
+    width: 472px;
+}
+
+#banner .navlist li .submenu h4 {
+    font-weight: normal;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+#banner .navlist li .submenu a {
+    color: #262626;
+}
+
+.current {
+    color: #ffffff;
+    background-color: #ff6600;
+}
+
+.test {
+    border: 1px solid red;
+}
+
+/*---------------- 底部--------------- */
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    border-top: 6px solid #f60;
+    position: relative;
+}
+
+footer .sale li {
+    float: left;
+    margin: 32px 68px 24px 0;
+}
+
+footer .flow ul {
+    float: left;
+    margin: 35px 32px;
+}
+
+footer .flow ul li {
+    line-height: 26px;
+    text-align: center;
+}
+
+footer .flow ul li a {
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+footer .flow ul li:first-child a {
+    font-size: 18px;
+    color: #000000;
+}
+
+footer .intro a {
+    margin-right: 16px;
+    color: #333333;
+}
+footer .intro p{
+    margin: 15px 200px 105px;
+}
+
+/* ----------优惠券楼层图---------- */
+#ticket {
+    width: 40px;
+    height: 180px;
+    position: fixed;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#ticket a {
+    float: left;
+    position: relative;
+}
+#ticket .tic2 {
+    width: 40px;
+    height: 100px;
+}
+#ticket .tic3,.tic1 {
+    width: 40px;
+    height: 40px; 
+}
+
+#ticket > a.tic1 {
+    background: url(../imgs/two_30.jpg) no-repeat;
+}
+
+#ticket > a.tic2 {
+    background: url(../imgs/two_35.jpg) no-repeat;
+}
+
+#ticket > a.tic3 {
+    background: url(../imgs/two_40.jpg) no-repeat;
+}
+#ticket .tic2 span {
+    background: url(../imgs/two_34.jpg) no-repeat;
+}
+#ticket .tic2 span {
+    position: absolute;
+    right:40px;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
