@@ -1,0 +1,259 @@
+@charset 'utf-8';
+
+.com-title {
+    line-height: 34px;
+    border-bottom: 6px solid #f60;
+}
+
+/* banner左边轮播 */
+#banner .sliderBox4 {
+    width: 1000px;
+    height: 450px;
+}
+
+#banner .hot {
+    width: 200px;
+}
+
+#banner .hot>p {
+    padding: 6px;
+}
+
+#banner .hot ul li {
+    position: relative;
+}
+
+#banner .hot ul li .title {
+    border-bottom: solid 2px #e6e6e6;
+}
+
+#banner .hot ul li span {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#banner .hot ul li>p {
+    line-height: 28px;
+}
+
+#banner .hot ul li p>img {
+    height: 37px;
+}
+
+#banner .hot ul li p:not(:last-child)>p {
+    border-bottom: 2px solid #e6e6e6;
+}
+
+#banner .hot ul li div>img {
+    width: 100px;
+    height: 100px;
+}
+
+#banner .hot ul li div>p {
+    width: 80px;
+    margin-top: 25px;
+}
+
+/* 里面的不显示 */
+#banner .hot ul li div {
+    display: none;
+}
+
+/* 当前div显示 */
+#banner .hot ul li div.cur {
+    display: block;
+}
+
+/* 当前的标题 */
+#banner .hot ul li .title.curtitle {
+    display: none;
+}
+
+/*  乐购·图书折扣区 */
+/* 公共标题 */
+
+#discount .com-title p {
+    width: 220px;
+    height: 46px;
+    background-color: #f60;
+    text-align: center;
+    line-height: 46px;
+}
+
+#discount ul li {
+    float: left;
+    width: 214px;
+    height: 300px;
+    margin: 13px;
+}
+
+#discount ul li .pic1 {
+    margin: 25px 32px 5px;
+}
+
+#discount ul li span:last-child {
+    text-decoration: line-through;
+}
+
+#discount ul li:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+#discount ul li p {
+    margin: 0 15px;
+}
+
+/*----------------- 新书上架------------ */
+.com-title span {
+    display: inline-block;
+    width: 42px;
+    height: 44px;
+    background-color: #f60;
+    text-align: center;
+    line-height: 44px;
+    margin-top: 20px;
+}
+
+#ground .com-title {
+    width: 904px;
+}
+
+#ground .gr-main {
+    width: 900px;
+    /* height: 500px; */
+    border: solid 2px #e6e6e6;
+}
+
+#ground .gr-main {
+    border-top: none;
+}
+
+/* ---------新书左边-------- */
+#ground .gr-main li {
+    float: left;
+    width: 170px;
+    height: 220px;
+    margin: 10px 5px;
+}
+
+#ground .gr-main li .pic1 {
+    margin: 4px 10px;
+}
+
+#ground .gr-main li span:last-child {
+    text-decoration: line-through;
+}
+
+#ground .gr-main li:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+
+/* ----------------新书右边------------- */
+
+#ground .gr-detail {
+    width: 280px;
+    border: solid 2px #e6e6e6;
+}
+
+#ground .gr-detail .title {
+    line-height: 44px;
+}
+
+#ground .gr-detail ul li {
+    position: relative;
+}
+
+#ground .gr-detail ul li span {
+    position: absolute;
+    left: 8px;
+    top: 5px;
+}
+
+#ground .gr-detail ul li div {
+    display: none;
+}
+
+#ground .gr-detail ul li div.cur {
+    display: block;
+}
+
+#ground .gr-detail ul li .title.curtitle {
+    display: none;
+}
+
+#ground .gr-detail ul li div p {
+    width: 126px;
+    height: 115px;
+    margin: 10px;
+    line-height: 20px;
+}
+
+#ground .gr-detail ul li:not(:last-child)>p {
+    border-bottom: 2px solid #e6e6e6;
+}
+
+/* 独家提供 */
+#offer>div>ul>li {
+    float: left;
+    width: 95px;
+    height: 34px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* 独家提供轮播 */
+#offer .of-main {
+    height: 518px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+#offer .of-main>li {
+    float: left;
+    width: 170px;
+    height: 220px;
+    margin: 20px 15px;
+}
+
+#offer .of-main>li .pic1 {
+    margin: 4px 10px;
+}
+
+#offer .of-main>li >span:last-child {
+    text-decoration: line-through;
+}
+
+#offer .of-main>li:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+/*------------ 猜你喜欢-----------*/
+#guess.com-title ul li:first-child img {
+    vertical-align: middle;
+}
+
+#guess .com-title>span {
+    margin-top: 25px;
+}
+
+#guess>div>ul>li {
+    float: left;
+    cursor: pointer;
+    margin-top: 34px;
+}
+
+#guess .renwen li {
+    float: left;
+    width: 200px;
+    margin: 30px 0 10px 0;
+}
