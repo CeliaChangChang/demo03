@@ -1,0 +1,98 @@
+@charset 'utf-8';
+header {
+    border-bottom:2px solid #e6e6e6;
+}
+header .top>div>img {
+    width: 258px;
+	height: 113px;
+}
+header .top .top-r>p:first-child {
+    margin: 58px 0px 38px -70px;
+}
+header .top .top-r>p:last-child {
+    margin: 70px -115px 15px 0px;
+}
+
+/*------ 注册界面------ */
+
+#sgin>form{
+    width: 400px;
+    margin: 60px auto;
+    /* background-color: skyblue; */
+}
+#sgin>form>p:not(:nth-child(6)) {
+    margin-bottom: 50px;
+}
+
+#sgin>form>p{
+    height: 44px;
+    border: solid 1px #d9d9d9;
+}
+#sgin>form p>input {
+    font-size: 16px;
+    color: #cccccc;
+    width:262px;
+    height: 40px;
+    border:none;
+}
+#sgin>form>p>span {
+    display: inline-block;
+    width: 129px;
+    font-size: 22px;
+    line-height: 42px;
+    color: #666666;
+}
+
+
+#sgin>form .auth{
+    position: relative;
+}
+#sgin>form>p .ma1 {
+    position: absolute;
+    top:3px;
+    right:2px;
+}
+
+#sgin>form .ph-auth{
+    position: relative;
+}
+#sgin>form>p .ma2 {
+    position: absolute;
+    top:3px;
+    right:2px;
+}
+#sgin>form>h4 {
+    margin: 10px 0 34px 0;
+}
+#sgin>form>h4 .choose {
+    width: 12px;
+	height: 12px;
+	border: solid 1px #e5e5e5;
+}
+
+#sgin>form>h4 .agree {
+    font-size: 14px; 
+    color: #4d4d4d;
+    font-weight: normal;
+	
+}
+#sgin>form .sginbtn {
+    background-color: #ff6600;
+    font-size:28px;
+    color: #ffffff;
+    width: 400px;
+    height: 44px;
+}
+
+
+
+
+
+/*------footer-------*/
+footer {
+    border-top:2px solid #e6e6e6;
+}
+
+footer .intro {
+    padding-top: 30px;
+}

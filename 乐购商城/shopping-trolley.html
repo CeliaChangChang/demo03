@@ -46,25 +46,275 @@
                     </select>
                 </form>
             </nav>
-            <p class="mt20 col66 fs20">填写并核对订单信息</p>
-            <div class="check">
-               <input type="checkbox">
-                <a href="#">全选</a>
-                <a href="#" class="ml330 mr175 ">商品</a>
-                <a href="#" class="ml115">单价</a>
-                <a href="#" class="ml105">数量</a>
-                <a href="#" class="ml85">小计</a>
-                <a href="#" class="ml85">操作</a>
-               
-            </div>
         </div>
     </header>
+    <!-- 购物车区域   -->
+    <section id="shopcartarea" class="lg-container clearfix">
+        <p class="fs20 col66">填写并核对订单信息</p>
+        <table>
+            <!-- 标题行 -->
+            <thead>
+                <tr>
+                    <td width="100">
+                        <input type="checkbox">全选
+                    </td>
+                    <td width="400">
+                        商品
+                    </td>
+                    <td width='200'>
+                        单价
+                    </td>
+                    <td width="200">
+                        数量
+                    </td>
+                    <td width="200">
+                        小计
+                    </td>
+                    <td width="100">
+                        操作
+                    </td>
+                </tr>
+            </thead>
+            <!-- 表格主体 -->
+            <tbody>
+                <tr>
+                    <td class="fir">
+                        <input type="checkbox" class="singlechk">
+                    </td>
+                    <td>
+                        <img src="./imgs/cong02.jpg" alt="">
+                        <span>从你的世界路过</span>
+                    </td>
+                    <td class="singleprice">
+                        41.00
+                    </td>
+                    <td>
+                        <a class="reducebtn fl">-</a>
+                        <input type="text" class="count fl">
+                        <a class="addbtn fl">+ </a>
+                    </td>
+                    <!-- 小计 -->
+                    <td class="singleTotalPrice fs18">
+                        41.00
+                    </td>
+                    <td>
+                        <a>删除</a>
+                        <br>
+                        <a>移到我的关注</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fir">
+                        <input type="checkbox" class="singlechk">
+                    </td>
+                    <td>
+                        <img src="./imgs/cong02.jpg" alt="">
+                        <span>从你的世界路过</span>
+                    </td>
+                    <td class="singleprice">
+                        41.00
+                    </td>
+                    <td>
+                        <a class="reducebtn fl">-</a>
+                        <input type="text" class="count fl">
+                        <a class="addbtn fl">+ </a>
+                    </td>
+                    <!-- 小计 -->
+                    <td class="singleTotalPrice fs18">
+                        41.00
+                    </td>
+                    <td>
+                        <a>删除</a>
+                        <br>
+                        <a>移到我的关注</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fir">
+                        <input type="checkbox" class="singlechk">
+                    </td>
+                    <td>
+                        <img src="./imgs/cong02.jpg" alt="">
+                        <span>从你的世界路过</span>
+                    </td>
+                    <td class="singleprice">
+                        41.00
+                    </td>
+                    <td>
+                        <a class="reducebtn fl">-</a>
+                        <input type="text" class="count fl">
+                        <a class="addbtn fl">+ </a>
+                    </td>
+                    <!-- 小计 -->
+                    <td class="singleTotalPrice fs18">
+                        41.00
+                    </td>
+                    <td>
+                        <a>删除</a>
+                        <br>
+                        <a>移到我的关注</a>
+                    </td>
+                </tr>
+
+                <tr class="last"></tr>
+            </tbody>
+            <!-- 表格尾部 -->
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="selall">全选
+                    </td>
+                    <td>
+                        <a>删除选中商品</a>
+                    </td>
+                    <td colspan="2">
+                        已选择 <span class="totalnum">0</span> 件商品
+                    </td>
+
+                    <td>
+                        总价: <span class="totalprice">0.00</span>
+                    </td>
+                    <td>
+                        <a href="#">去结算</a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section id="like" class="lg-container clearfix">
+        <!---------标题--------->
+        <div class="com-title fs24 colff clearfix mt25">
+            <p>猜你喜欢</p>
+        </div>
+        <!---- 人气单品内容------>
+        <ul class="clearfix">
+            <li class="cur">
+                <img src="./imgs/baiyixing.jpg" alt="" class="pic1">
+                <img src="./imgs/index05_18.jpg" alt="" class="pic2">
+                <p class="col33 fs14">白夜行 东野上吾</p>
+                <p class="fs14 colfd mt4">推荐：
+                    <img src="./imgs/stars_01.jpg" alt="">
+                </p>
+                <span class="colfd fs24">￥ ：38 </span>
+                <span class="colc0 fs24">￥ ：58 </span>
+            </li>
+            <li>
+                <img src="./imgs/baiyixing.jpg" alt="" class="pic1">
+                <img src="./imgs/index05_18.jpg" alt="" class="pic2">
+                <p class="col33 fs14">白夜行 东野上吾</p>
+                <p class="fs14 colfd mt4">推荐：
+                    <img src="./imgs/stars_01.jpg" alt="">
+                </p>
+                <span class="colfd fs24">￥ ：38 </span>
+                <span class="colc0 fs24">￥ ：58 </span>
+            </li>
+            <li>
+                <img src="./imgs/baiyixing.jpg" alt="" class="pic1">
+                <img src="./imgs/index05_18.jpg" alt="" class="pic2">
+                <p class="col33 fs14">白夜行 东野上吾</p>
+                <p class="fs14 colfd mt4">推荐：
+                    <img src="./imgs/stars_01.jpg" alt="">
+                </p>
+                <span class="colfd fs24">￥ ：38 </span>
+                <span class="colc0 fs24">￥ ：58 </span>
+            </li>
+            <li>
+                <img src="./imgs/baiyixing.jpg" alt="" class="pic1">
+                <img src="./imgs/index05_18.jpg" alt="" class="pic2">
+                <p class="col33 fs14">白夜行 东野上吾</p>
+                <p class="fs14 colfd mt4">推荐：
+                    <img src="./imgs/stars_01.jpg" alt="">
+                </p>
+                <span class="colfd fs24">￥ ：38 </span>
+                <span class="colc0 fs24">￥ ：58 </span>
+            </li>
+            <li>
+                <img src="./imgs/baiyixing.jpg" alt="" class="pic1">
+                <img src="./imgs/index05_18.jpg" alt="" class="pic2">
+                <p class="col33 fs14">白夜行 东野上吾</p>
+                <p class="fs14 colfd mt4">推荐：
+                    <img src="./imgs/stars_01.jpg" alt="">
+                </p>
+                <span class="colfd fs24">￥ ：38 </span>
+                <span class="colc0 fs24">￥ ：58 </span>
+            </li>
+        </ul>
+        <img src="./imgs/moshou.png" alt="">
+    </section>
+    <footer>
+        <!-- 底部图片 -->
+        <div class="bgf2 clearfix">
+            <ul class="sale wrapper">
+                <li>
+                    <img src="./imgs/222_11.png" alt="">
+                </li>
+                <li>
+                    <img src="./imgs/222_13(1).png" alt="">
+                </li>
+                <li>
+                    <img src="./imgs/222_15.png" alt="">
+                </li>
+                <li>
+                    <img src="./imgs/222_17.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- 底部链接 -->
+        <div class="flow wrapper clearfix">
+            <ul>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">发票制度</a></li>
+                <li><a href="#">账户管理</a></li>
+                <li><a href="#">会员优惠</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">货到付款</a></li>
+                <li><a href="#">网上支付</a></li>
+                <li><a href="#">礼品卡支付</a></li>
+                <li><a href="#">银行转帐</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#">订单服务</a></li>
+                <li><a href="#">订单配送查询</a></li>
+                <li><a href="#">订单状态说明</a></li>
+                <li><a href="#">自助取消订单</a></li>
+                <li><a href="#">自助修改订单</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">退换货</a></li>
+                <li><a href="#">退换货政策</a></li>
+                <li><a href="#">自助申请退换货</a></li>
+                <li><a href="#">退换货进度查询</a></li>
+                <li><a href="#">退款方式和时间</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">商家服务</a></li>
+                <li><a href="#">商家中心</a></li>
+                <li><a href="#">运营服务</a></li>
+                <li><a href="#">加入尾品汇</a></li>
+            </ul>
+        </div>
+        <div class="intro wrapper">
+            <a href="#">公司简介 |</a>
+            <a href="#"> Investor Relations |</a>
+            <a href="#">网站联盟 | </a>
+            <a href="#">乐购招商 |</a>
+            <a href="#">机构销售 |</a>
+            <a href="#">手机乐购 |</a>
+            <a href="#">官方Blog | </a>
+            <a href="#"> 热词搜索</a>
+            <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+        <img src="./imgs/logo_00.png" alt="" class="logo">
+        <!--回到顶部图片  -->
+        <img src="./imgs/gototop_05.jpg" alt="" class="gotoTop">
+    </footer>
 
 
 
-    <!-- <section id=""class="lg-container clearfix">
-        <p>填写并核对订单信息</p>
-    </section> -->
 
 
 
@@ -87,6 +337,7 @@
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/jquery.slidebox.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/trolley.js"></script>
 </body>
 
 </html>

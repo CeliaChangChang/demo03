@@ -153,6 +153,9 @@ ul {
 .colf4b {
     color: #f4b212;
 }
+.colff6 {
+    color:#f6f6f6;
+}
 
 .tcenter {
     text-align: center;
@@ -226,12 +229,16 @@ ul {
 .ml36 {
     margin-left: 36px;
 }
+
 .ml45 {
     margin-left: 45px;
 }
 
 .ml65 {
     margin-left: 65px;
+}
+.ml148 {
+    margin-left: 148px;
 }
 
 
@@ -242,20 +249,10 @@ ul {
 .mr35 {
     margin-right: 35px;
 }
-
-.ml105 {
-    margin-left: 105px;
-}
-.ml115 {
-    margin-left: 115px;
-}
-.mr175 {
-    margin-right: 175px;
+.mr85 {
+    margin-right: 85px;
 }
 
-.ml330 {
-    margin-left: 330px;
-}
 
 .mb15 {
     margin-bottom: 15px;
@@ -313,6 +310,9 @@ ul {
     font-size: 28px;
 }
 
+.fs30 {
+    font-size: 30px;
+}
 .fontb {
     font-weight: bold;
 }
@@ -564,6 +564,7 @@ footer .gotoTop {
     top: -56px;
     cursor: pointer;
 }
+
 
 /* ----------优惠券楼层图---------- */
 #ticket {

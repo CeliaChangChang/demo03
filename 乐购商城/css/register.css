@@ -1,0 +1,159 @@
+@charset 'utf-8';
+
+header .top>div>img {
+    width: 258px;
+    height: 114px;
+}
+
+header>p {
+    margin: 25px 0 30px 480px;
+}
+
+#register>img {
+    width: 100%;
+}
+
+#register {
+    background: url(../imgs/register02.jpg) no-repeat center;
+    height: 500px;
+}
+
+#register>div {
+    width: 350px;
+    height: 370px;
+    background-color: #ffffff;
+    margin: 60px 230px 0;
+}
+
+.re-wrapper {
+    width: 290px;
+    margin: 0 auto;
+}
+
+#register .title {
+    height: 56px;
+    font-size: 22px;
+    line-height: 56px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#register .title .line {
+    width: 1px;
+    height: 24px;
+    background-color: #f6f6f6;
+}
+
+#register .title span {
+    display: inline-block;
+    width: 160px;
+    height: 24px;
+    text-align: center;
+
+}
+
+#register .title>span.cur {
+    color: #ff6600;
+}
+/*---------------- 二维码隐藏------------------- */
+#register .re-main {
+    display: none;
+}
+
+#register .re-main>form {
+    position: relative;
+    height: 260px;
+}
+
+#register .re-main>form>input {
+    width: 288px;
+    height: 38px;
+    border: solid 1px #bfbfbf;
+
+}
+
+#register .re-main>form>input:last-child {
+    width: 290px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+#register .re-main>form>input:first-child {
+    font-size: 22px;
+    color: #353535;
+    text-indent: 42px;
+    margin: 40px 0 15px;
+}
+
+#register .re-main>form .pwd {
+    text-indent: 42px;
+    font-size: 22px;
+    color: #e6e6e6;
+}
+
+#register .re-main form .re-auto {
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
+    border: solid 1px #bfbfbf;
+}
+
+#register .re-main>p {
+    border-top: 2px solid #e6e6e6;
+    line-height: 50px;
+}
+
+#register .re-main>p>img {
+    margin-left: 125px;
+    vertical-align: middle;
+}
+
+#register .re-main>form .ren {
+    position: absolute;
+    left: 1px;
+    top: 41px;
+}
+
+#register .re-main>form .x {
+    position: absolute;
+    right: 10px;
+    top: 54px;
+}
+
+#register .re-main>form .key {
+    position: absolute;
+    left: 1px;
+    top: 96px;
+}
+
+#register .re-main2 {
+    position: relative;
+}
+
+#register .re-main2>img {
+    margin: 65px 100px 40px;
+}
+
+#register .re-main2>p {
+    margin: 0 85px;
+}
+
+#register .re-main2 .phone {
+    position: absolute;
+    top: -10px;
+    right:-100px;
+    display: none;
+}
+
+
+
+
+
+
+footer {
+    border: none;
+}
+
+footer .intro {
+    padding-top: 30px;
+
+}
