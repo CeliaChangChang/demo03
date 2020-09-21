@@ -55,7 +55,6 @@ ul {
     color: #ff6600;
 }
 
-
 .col1a {
     color: #1a1a1a;
 }
@@ -118,6 +117,42 @@ ul {
     color: #468bfd;
 }
 
+.col64 {
+    color: #646464;
+}
+
+.col81 {
+    color: #818181;
+}
+
+.colf7 {
+    color: #f76767;
+}
+
+.col94 {
+    color: #949494;
+}
+
+.colfe {
+    color: #fefefefe;
+}
+
+.col66 {
+    color: #666666;
+}
+
+.colfc {
+    color: #f8380c;
+}
+.col99 {
+   color: #999999; 
+}
+.colf8 {
+    color: #f8380c;
+}
+.colf4b {
+    color: #f4b212;
+}
 
 .tcenter {
     text-align: center;
@@ -127,6 +162,10 @@ ul {
 .bgf2 {
 
     background-color: #f2f2f2;
+}
+
+.bgf5 {
+    background-color: #f5f5f5;
 }
 
 .bgf3 {
@@ -153,6 +192,10 @@ ul {
     background-color: #b3b3b3;
 }
 
+.bgff {
+    background-color: #ffffff;
+}
+
 /* --------------公共margin---------------*/
 .mt4 {
     margin-top: 4px;
@@ -165,7 +208,9 @@ ul {
 .mt12 {
     margin-top: 12px;
 }
-
+.mt20 {
+    margin-top: 20px;
+}
 .mt25 {
     margin-top: 25px;
 }
@@ -181,6 +226,14 @@ ul {
 .ml36 {
     margin-left: 36px;
 }
+.ml45 {
+    margin-left: 45px;
+}
+
+.ml65 {
+    margin-left: 65px;
+}
+
 
 .ml200 {
     margin-left: 200px;
@@ -188,6 +241,20 @@ ul {
 
 .mr35 {
     margin-right: 35px;
+}
+
+.ml105 {
+    margin-left: 105px;
+}
+.ml115 {
+    margin-left: 115px;
+}
+.mr175 {
+    margin-right: 175px;
+}
+
+.ml330 {
+    margin-left: 330px;
 }
 
 .mb15 {
@@ -200,6 +267,10 @@ ul {
 
 .pt15 {
     padding-top: 15px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
 }
 
 .pt20 {
@@ -222,13 +293,32 @@ ul {
 .fs18 {
     font-size: 18px;
 }
+.fs20 {
+    font-size: 20px;
+}
+.fs22 {
+    font-size: 22px;
+}
 
 .fs24 {
     font-size: 24px;
 }
 
+.fs26 {
+    font-size: 26px;
+}
+
+
 .fs28 {
     font-size: 28px;
+}
+
+.fontb {
+    font-weight: bold;
+}
+
+.fs72 {
+    font-size: 72px;
 }
 
 /* 公共标题 */
@@ -268,7 +358,7 @@ header .search-r {
     height: 40px;
 }
 
-header .searchbox form {
+header .searchbox>div>form {
     width: 440px;
     height: 36px;
     background-color: #ffffff;

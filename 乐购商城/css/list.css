@@ -19,15 +19,10 @@
     padding: 6px;
 }
 
-#banner .hot ul li {
+#banner .hot>ul>li {
     position: relative;
 }
-
-#banner .hot ul li .title {
-    border-bottom: solid 2px #e6e6e6;
-}
-
-#banner .hot ul li span {
+#banner .hot>ul>li>span {
     display: inline-block;
     position: absolute;
     right: 0px;
@@ -37,47 +32,47 @@
     text-align: center;
 }
 
-#banner .hot ul li>p {
-    line-height: 28px;
+#banner .hot>ul>li>p {
+    line-height: 38px;
 }
 
-#banner .hot ul li p>img {
+#banner .hot>ul>li p>img {
     height: 37px;
 }
 
-#banner .hot ul li p:not(:last-child)>p {
-    border-bottom: 2px solid #e6e6e6;
+#banner .hot>ul>li:not(:last-child)>p{
+    border-bottom: solid 2px #e6e6e6;
 }
 
-#banner .hot ul li div>img {
+#banner .hot>ul>li>div>img {
     width: 100px;
     height: 100px;
 }
 
-#banner .hot ul li div>p {
+#banner .hot>ul>li>div>p {
     width: 80px;
     margin-top: 25px;
 }
 
 /* 里面的不显示 */
-#banner .hot ul li div {
+#banner .hot>ul>li>div {
     display: none;
 }
 
 /* 当前div显示 */
-#banner .hot ul li div.cur {
+#banner .hot>ul>li>div.cur {
     display: block;
 }
 
 /* 当前的标题 */
-#banner .hot ul li .title.curtitle {
+#banner .hot>ul>li .title.curtitle {
     display: none;
 }
 
 /*  乐购·图书折扣区 */
 /* 公共标题 */
 
-#discount .com-title p {
+#discount .com-title>p {
     width: 220px;
     height: 46px;
     background-color: #f60;
@@ -85,32 +80,32 @@
     line-height: 46px;
 }
 
-#discount ul li {
+#discount>ul>li {
     float: left;
     width: 214px;
     height: 300px;
     margin: 13px;
 }
 
-#discount ul li .pic1 {
+#discount>ul>li .pic1 {
     margin: 25px 32px 5px;
 }
 
-#discount ul li span:last-child {
+#discount>ul>li>span:last-child {
     text-decoration: line-through;
 }
 
-#discount ul li:hover {
+#discount>ul>li:hover {
     background-color: #f2f2f2;
     cursor: pointer;
 }
 
-#discount ul li p {
+#discount>ul>li>p {
     margin: 0 15px;
 }
 
 /*----------------- 新书上架------------ */
-.com-title span {
+.com-title>span {
     display: inline-block;
     width: 42px;
     height: 44px;
@@ -135,22 +130,22 @@
 }
 
 /* ---------新书左边-------- */
-#ground .gr-main li {
+#ground .gr-main>li {
     float: left;
     width: 170px;
     height: 220px;
     margin: 10px 5px;
 }
 
-#ground .gr-main li .pic1 {
+#ground .gr-main>li .pic1 {
     margin: 4px 10px;
 }
 
-#ground .gr-main li span:last-child {
+#ground .gr-main>li>span:last-child {
     text-decoration: line-through;
 }
 
-#ground .gr-main li:hover {
+#ground .gr-main>li:hover {
     background-color: #f2f2f2;
     cursor: pointer;
 }
@@ -167,36 +162,36 @@
     line-height: 44px;
 }
 
-#ground .gr-detail ul li {
+#ground .gr-detail>ul>li {
     position: relative;
 }
 
-#ground .gr-detail ul li span {
+#ground .gr-detail>ul>li>span {
     position: absolute;
     left: 8px;
     top: 5px;
 }
 
-#ground .gr-detail ul li div {
+#ground .gr-detail>ul li div {
     display: none;
 }
 
-#ground .gr-detail ul li div.cur {
+#ground .gr-detail>ul li div.cur {
     display: block;
 }
 
-#ground .gr-detail ul li .title.curtitle {
+#ground .gr-detail>ul li .title.curtitle {
     display: none;
 }
 
-#ground .gr-detail ul li div p {
+#ground .gr-detail>ul li div p {
     width: 126px;
     height: 115px;
     margin: 10px;
     line-height: 20px;
 }
 
-#ground .gr-detail ul li:not(:last-child)>p {
+#ground .gr-detail>ul>li:not(:last-child)>p {
     border-bottom: 2px solid #e6e6e6;
 }
 
@@ -214,6 +209,7 @@
 /* 独家提供轮播 */
 #offer .of-main {
     height: 518px;
+    width: 1200px;
     border-bottom: 2px solid #e6e6e6;
 }
 
@@ -221,14 +217,16 @@
     float: left;
     width: 170px;
     height: 220px;
-    margin: 20px 15px;
+    margin: 10px 15px;
 }
 
-#offer .of-main>li .pic1 {
+#offer .of-main>li>img{
     margin: 4px 10px;
+    width: 150px !important;
+    height: 150px !important;
 }
 
-#offer .of-main>li >span:last-child {
+#offer .of-main>li>span:last-child {
     text-decoration: line-through;
 }
 
@@ -238,13 +236,55 @@
 }
 
 /*------------ 猜你喜欢-----------*/
-#guess.com-title ul li:first-child img {
+#guess .com-title>ul>li:first-child>img {
     vertical-align: middle;
 }
 
 #guess .com-title>span {
     margin-top: 25px;
 }
+
+#guess .gu-main {
+    height: 518px;
+    width: 1200px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+#guess .gu-main>li {
+    float: left;
+    cursor: pointer;
+    margin-top: 34px;
+}
+
+#guess .gu-main>li>img{
+    margin: 4px 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#guess .gu-main>li>span:last-child {
+    text-decoration: line-through;
+}
+
+#guess .gu-main>li:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #guess>div>ul>li {
     float: left;

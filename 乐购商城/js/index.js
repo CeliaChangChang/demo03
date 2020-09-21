@@ -14,7 +14,6 @@
 //     });  
 // })
 
-
 // $(function (){
 //     $(".sliderBox2").slidebox({
 //         boxh: 218,//盒子的高度
@@ -54,7 +53,11 @@ lunbo('.sliderBox5',530,1200,530)
 
 })
 
+
+
+
 // 电子书模块选项卡
+
 $("#ebook .com-title ul li").mouseenter(function(){
     $(this).addClass("current").siblings().removeClass("current")
     let index=$(this).index();
@@ -93,11 +96,6 @@ function getHot(a){
   
   
   
-
-
-
-
-
 //首页楼层图1效果
 $("#build li").hover(function(){
     $(this).css({ 
@@ -123,7 +121,6 @@ $("#build li").hover(function(){
          * $("html,body").scrollTop(  $(".floor").eq(index).offset().top  )
          */
     let $jumpBox=$(".floor").eq($(this).index());
-    // alert(1);
     // console.log($jumpBox);
     let top= $jumpBox.offset().top;
     $("html,body").stop().animate({scrollTop:top},500)
