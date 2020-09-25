@@ -56,7 +56,7 @@
             <thead>
                 <tr>
                     <td width="100">
-                        <input type="checkbox">全选
+                        <input type="checkbox" class="selall">全选
                     </td>
                     <td width="400">
                         商品
@@ -90,7 +90,7 @@
                     </td>
                     <td>
                         <a class="reducebtn fl">-</a>
-                        <input type="text" class="count fl">
+                        <input type="text" class="count fl" value="1">
                         <a class="addbtn fl">+ </a>
                     </td>
                     <!-- 小计 -->
@@ -98,7 +98,7 @@
                         41.00
                     </td>
                     <td>
-                        <a>删除</a>
+                        <a class="delbtn">删除</a>
                         <br>
                         <a>移到我的关注</a>
                     </td>
@@ -116,7 +116,7 @@
                     </td>
                     <td>
                         <a class="reducebtn fl">-</a>
-                        <input type="text" class="count fl">
+                        <input type="text" class="count fl" value="1">
                         <a class="addbtn fl">+ </a>
                     </td>
                     <!-- 小计 -->
@@ -124,7 +124,7 @@
                         41.00
                     </td>
                     <td>
-                        <a>删除</a>
+                        <a class="delbtn">删除</a>
                         <br>
                         <a>移到我的关注</a>
                     </td>
@@ -142,7 +142,7 @@
                     </td>
                     <td>
                         <a class="reducebtn fl">-</a>
-                        <input type="text" class="count fl">
+                        <input type="text" class="count fl" value="1">
                         <a class="addbtn fl">+ </a>
                     </td>
                     <!-- 小计 -->
@@ -150,7 +150,7 @@
                         41.00
                     </td>
                     <td>
-                        <a>删除</a>
+                        <a class="delbtn">删除</a>
                         <br>
                         <a>移到我的关注</a>
                     </td>
@@ -165,27 +165,32 @@
                         <input type="checkbox" class="selall">全选
                     </td>
                     <td>
-                        <a>删除选中商品</a>
+                        <a class="delallbtn">删除选中商品</a>
                     </td>
                     <td colspan="2">
-                        已选择 <span class="totalnum">0</span> 件商品
+                        已选择 <span class="totalnum fs22 colf6">0</span> 件商品
                     </td>
 
                     <td>
-                        总价: <span class="totalprice">0.00</span>
+                        总价: <span class="totalprice fs20 colf6">0.00</span>
                     </td>
-                    <td>
+                    <td class="account">
                         <a href="#">去结算</a>
                     </td>
                 </tr>
             </tfoot>
         </table>
     </section>
+
+
+
+
     <section id="like" class="lg-container clearfix">
         <!---------标题--------->
         <div class="com-title fs24 colff clearfix mt25">
             <p>猜你喜欢</p>
         </div>
+
         <!---- 人气单品内容------>
         <ul class="clearfix">
             <li class="cur">
@@ -241,6 +246,7 @@
         </ul>
         <img src="./imgs/moshou.png" alt="">
     </section>
+
     <footer>
         <!-- 底部图片 -->
         <div class="bgf2 clearfix">

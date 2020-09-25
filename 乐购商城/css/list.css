@@ -22,6 +22,7 @@
 #banner .hot>ul>li {
     position: relative;
 }
+
 #banner .hot>ul>li>span {
     display: inline-block;
     position: absolute;
@@ -40,7 +41,7 @@
     height: 37px;
 }
 
-#banner .hot>ul>li:not(:last-child)>p{
+#banner .hot>ul>li:not(:last-child)>p {
     border-bottom: solid 2px #e6e6e6;
 }
 
@@ -207,35 +208,51 @@
 }
 
 /* 独家提供轮播 */
-#offer .of-main {
-    height: 518px;
+#offer .sliderBox5 {
+    display: none;
+}
+
+#offer .sliderBox5.cur {
+    display: block;
+}
+
+
+#offer .sliderBox5 {
+    height: 530px;
     width: 1200px;
     border-bottom: 2px solid #e6e6e6;
 }
 
-#offer .of-main>li {
+#offer .sliderBox5 .of-main>li {
     float: left;
     width: 170px;
     height: 220px;
     margin: 10px 15px;
 }
 
-#offer .of-main>li>img{
+#offer .sliderBox5 .of-main>li>img {
     margin: 4px 10px;
     width: 150px !important;
     height: 150px !important;
 }
 
-#offer .of-main>li>span:last-child {
+#offer .sliderBox5 .of-main>li>span:last-child {
     text-decoration: line-through;
 }
 
-#offer .of-main>li:hover {
+#offer .sliderBox5 .of-main>li:hover {
     background-color: #f2f2f2;
     cursor: pointer;
 }
 
 /*------------ 猜你喜欢-----------*/
+
+#guess>.com-title>ul>li {
+    float: left;
+    cursor: pointer;
+    margin-top: 34px;
+}
+
 #guess .com-title>ul>li:first-child>img {
     vertical-align: middle;
 }
@@ -244,10 +261,28 @@
     margin-top: 25px;
 }
 
-#guess .gu-main {
-    height: 518px;
-    width: 1200px;
+/* 换一换的初始样式 */
+
+/*
+#guess .main {
+     position: relative;
+    overflow: hidden;
+    background-color: green;
+    height: 500px;
+    width: 100%;
     border-bottom: 2px solid #e6e6e6;
+} */
+
+#guess .main .gu-main {
+    /* position: absolute; */
+    height: 500px;
+    width: 100%;
+    border-bottom: 2px solid #e6e6e6;
+    display: none;
+}
+
+#guess .main .gu-main.cur {
+    display: block;
 }
 
 #guess .gu-main>li {
@@ -256,7 +291,7 @@
     margin-top: 34px;
 }
 
-#guess .gu-main>li>img{
+#guess .gu-main>li>img {
     margin: 4px 10px;
     width: 150px;
     height: 150px;
@@ -270,30 +305,12 @@
     background-color: #f2f2f2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#guess>div>ul>li {
-    float: left;
-    cursor: pointer;
-    margin-top: 34px;
+.renwen {
+    margin-top: 32px;
 }
 
-#guess .renwen li {
-    float: left;
+.renwen li {
     width: 200px;
-    margin: 30px 0 10px 0;
+    height: 113px;
+    float: left;
 }

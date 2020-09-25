@@ -40,11 +40,16 @@ header .searchbox .check>input {
     background-color: #f5f5f5;
     border: solid 1px #cccccc;
     vertical-align: middle;
+
 }
 
 /* 购物车区域 */
 #shopcartarea>p {
     line-height: 44px;
+}
+
+#shopcartarea input {
+    text-align: center;
 }
 
 #shopcartarea table {
@@ -122,6 +127,21 @@ header .searchbox .check>input {
     height: 30px;
     border: 1px solid #ccc;
 }
+
+#shopcartarea table tfoot .account {
+    background-color: #ff6600;
+    text-align: center;
+}
+
+#shopcartarea table tfoot .account>a {
+    font-size: 26px;
+    color: #fefefe;
+}
+
+#shopcartarea table tfoot .delallbtn {
+    cursor: pointer;
+}
+
 
 /* 人气单品 */
 #like .com-title>p {

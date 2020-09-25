@@ -233,14 +233,13 @@ ul {
 .ml45 {
     margin-left: 45px;
 }
-
 .ml65 {
     margin-left: 65px;
 }
+
 .ml148 {
     margin-left: 148px;
 }
-
 
 .ml200 {
     margin-left: 200px;
@@ -331,7 +330,7 @@ ul {
 
 header {
     height: 114px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 header .top {
@@ -358,7 +357,7 @@ header .search-r {
     height: 40px;
 }
 
-header .searchbox>div>form {
+.searchbox>div>form {
     width: 440px;
     height: 36px;
     background-color: #ffffff;
@@ -366,14 +365,13 @@ header .searchbox>div>form {
     box-sizing: border-box;
 }
 
-header .searchbox form input:first-child {
+.searchbox form input:first-child {
     width: 388px;
     height: 32px;
     text-indent: 1em;
 
 }
-
-header .searchbox form input:last-child {
+.searchbox form input:last-child {
     width: 48px;
     height: 32px;
     background-color: #f60;
@@ -505,6 +503,24 @@ header nav ul li a {
      */
     background-color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*---------------- 底部--------------- */
 .wrapper {

@@ -38,10 +38,13 @@ header>p {
 }
 
 #register .title .line {
-    width: 1px;
+    display: inline-block;
+    width: 2px;
     height: 24px;
     background-color: #f6f6f6;
 }
+
+
 
 #register .title span {
     display: inline-block;
@@ -54,10 +57,23 @@ header>p {
 #register .title>span.cur {
     color: #ff6600;
 }
-/*---------------- 二维码隐藏------------------- */
-#register .re-main {
-    display: none;
+
+
+label {
+    color: red;
 }
+#username-error{
+    position: absolute;
+    top:76px;
+    left:90px;
+}
+
+#pwd-error {
+    position: absolute;
+    top:160px;
+    left:90px;
+}
+
 
 #register .re-main>form {
     position: relative;
@@ -68,20 +84,23 @@ header>p {
     width: 288px;
     height: 38px;
     border: solid 1px #bfbfbf;
+    margin-bottom: 10px;
 
 }
 
 #register .re-main>form>input:last-child {
+    position: relative;
     width: 290px;
     height: 40px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #register .re-main>form>input:first-child {
+    position: relative;
     font-size: 22px;
     color: #353535;
     text-indent: 42px;
-    margin: 40px 0 15px;
+    margin: 30px 0 40px;
 }
 
 #register .re-main>form .pwd {
@@ -110,44 +129,48 @@ header>p {
 #register .re-main>form .ren {
     position: absolute;
     left: 1px;
-    top: 41px;
+    top: 31px;
 }
 
-#register .re-main>form .x {
+#register .re-main>form .cancel{
     position: absolute;
     right: 10px;
-    top: 54px;
+    top: 42px;
 }
 
 #register .re-main>form .key {
     position: absolute;
     left: 1px;
-    top: 96px;
+    top: 111px;
 }
 
-#register .re-main2 {
-    position: relative;
-}
-
-#register .re-main2>img {
-    margin: 65px 100px 40px;
-}
-
-#register .re-main2>p {
-    margin: 0 85px;
-}
-
-#register .re-main2 .phone {
-    position: absolute;
-    top: -10px;
-    right:-100px;
+/*------------------扫码支付区域----------------- */
+/* 二维码隐藏 */
+#register .re-main.active {
     display: none;
 }
 
+#register .qr-main {
+    height:260px;
+    position: relative;
+}
 
+#register .re-main .qr-code {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
 
+#register .re-main>h4 {
+    font-weight: normal;
+    text-align: center;
+}
 
+#register .re-main .qr-main .phone {
+    display: none;
+    margin-top: 50px;
 
+}
 
 footer {
     border: none;

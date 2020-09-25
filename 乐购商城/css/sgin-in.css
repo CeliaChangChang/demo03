@@ -43,6 +43,24 @@ header .top .top-r>p:last-child {
     color: #666666;
 }
 
+/* -------------删除&闭眼图片定位--------------- */
+#sgin .signupForm  p {
+    position: relative;
+}
+
+#sgin .signupForm .delimg ,
+#sgin .signupForm .eyeImg {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* ------------删除&闭眼图片定位--------- */
+
+
 
 #sgin>form .auth{
     position: relative;
@@ -59,10 +77,11 @@ header .top .top-r>p:last-child {
 #sgin>form>p .ma2 {
     position: absolute;
     top:3px;
+
     right:2px;
 }
 #sgin>form>h4 {
-    margin: 10px 0 34px 0;
+    margin: 30px 0 34px 0;
 }
 #sgin>form>h4 .choose {
     width: 12px;
@@ -76,18 +95,26 @@ header .top .top-r>p:last-child {
     font-weight: normal;
 	
 }
+#sgin>form .agree>a {
+    color: #4d4d4d;
+}
+#sgin>form .agree>a:hover {
+     color: #f60;
+} 
 #sgin>form .sginbtn {
-    background-color: #ff6600;
     font-size:28px;
     color: #ffffff;
     width: 400px;
     height: 44px;
 }
 
+/* --------提示的样式------ */
 
 
-
-
+label.error {
+    color: red;
+    margin-left: 140px;
+}
 /*------footer-------*/
 footer {
     border-top:2px solid #e6e6e6;

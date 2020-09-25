@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=de`vice-width, initial-scale=1.0">
     <title>Document</title>
     <!-- 引入重置样式 -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -34,16 +34,16 @@
         <div class="fr">
             <div class="title">
                 <span>扫码登录</span>
-                <span class="line"></span>
+                <i class="line"></i>
                 <span class="cur">账户登录</span>
             </div>
             <div class="re-main">
-                <form action="" class="re-wrapper">
-                    <input type="text" placeholder="12345678">
+                <form action="./index.html" class="re-wrapper" id="signupForm">
+                    <input type="text" name="username" placeholder="12345678" class="user">
                     <img src="./imgs/ren.png" alt="" class="ren">
-                    <img src="./imgs/xx (1).jpg" alt="" class="x">
+                    <img src="./imgs/xx (1).jpg" alt="" class="cancel">
 
-                    <input type="password" placeholder="密码" class="pwd">
+                    <input type="password" name="pwd" placeholder="密码" class="pwd">
                     <img src="./imgs/key.png" alt="" class="key">
                     <p>
                         <input type="checkbox" class="re-auto">
@@ -53,14 +53,15 @@
                     <input type="submit" value="登&nbsp;&nbsp;录" class="bgf6 colff fs24">
                 </form>
                 <p>
-                    <img src="./imgs/in.png" alt=""><span>立即注册</span>
+                    <img src="./imgs/in.png" alt=""><a href="./sgin-in.html" class="colf6 fs20">立即注册</a>
                 </p>
             </div>
-            <div class="re-main2">
-    
-                <img src="./imgs/erweima.jpg" alt="" class="ma">
-                <img src="./imgs/phone.png" alt="" class="phone">
-                <p>打开手机版 乐购APP  扫一扫</p>
+            <div class="re-main active">
+               <div class="qr-main">
+                <img src="./imgs/erweima.jpg" alt="" class="qr-code">
+                <img src="./imgs/phone.png" alt="" class="phone fr">
+               </div>
+                <h4 class="col66">打开手机版 乐购APP  扫一扫</h4>
            
             </div>
         </div>
@@ -82,7 +83,10 @@
 
 
     <script src="./lib/jquery.min.js"></script>
-    <script src="./lib/jquery.slidebox.js"></script>
+    <script src="./js/slide.fn.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./js/register.js "></script>
+
 
 </body>
 

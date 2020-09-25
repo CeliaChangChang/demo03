@@ -21,6 +21,7 @@
             <div class="lg-container clearfix">
                 <img src="./imgs/sign-in_02.jpg" alt="" class="fl">
                 <div class="txturl fl">
+
                     legochina.cn
                 </div>
                 <div class="loginxbox fr">
@@ -38,22 +39,27 @@
 
     </header>
     <section id="sgin">
-        <form action="">
-            <p >
+        <form action="./register.html" class="signupForm">
+            <p>
                 <span>用户名</span>
-                <input type="text" name="username" value="" placeholder="您的账户名和登录名">
+                <input type="text" name="username" value="" placeholder="您的账户名和登录名" class="username">
+                <img src="./imgs/delete.png" alt="" class="delimg">
             </p>
             <p >
                 <span>设置密码</span>
-                <input type="password" name="pwd" value="" placeholder="建议设置两种字符密码">
-            </p>
-            <p >
-                <span>确认密码</span>
-                <input type="password" name="repwd" value="" placeholder="再次输入密码">
+                <input type="password" name="pwd" id="pwd"  value="" placeholder="建议设置两种字符密码" class="pwdbox">
+                <img src="./imgs/close.png" alt="" class="eyeImg">
             </p>
             <p>
+                <span>确认密码</span>
+                <input type="password" name="repwd" value="" placeholder="再次输入密码" class="pwdbox">
+                <img src="./imgs/close.png" alt="" class="eyeImg">
+                <!-- <img src="./imgs/open.png" alt=""> -->
+            </p>
+            <p class="ph-del">
                 <span>中国+86</span>
-                <input type="text" name="ph" value="" placeholder="建议使用常用手机号">
+                <input type="text" name="ph" value="" placeholder="建议使用常用手机号" class="p-del">
+                <img src="./imgs/delete.png" alt="" class="delimg">
             </p>
             <p class="auth">
                 <span>验证码</span>
@@ -62,12 +68,12 @@
             </p>
             <p class="ph-auth">
                 <span>手机验证码</span>
-                <input type="text" value="" name="" placeholder="输入手机验证码">
+                <input type="text" value="" name="phcode" placeholder="输入手机验证码">
                 <img src="./imgs/huoqu.jpg" alt="" class="ma2">
             </p>
             <h4>
             <input type="checkbox" class="choose">
-                <span class="agree">我已阅读并同意 <a href href="#" class="colf6">《京东用户注册协议》</a></span>   
+                <span class="agree">我已阅读并同意 <a href href="#">《京东用户注册协议》</a></span>   
             </h4>
              <p>
                 <input type="submit" value="立即注册" class="sginbtn">
@@ -90,12 +96,13 @@
             <a href="#"> 热词搜索</a>
             <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
         </div>
-    </footer>
+    </footer> 
 
 
 
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/jquery.slidebox.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
     <script src="./js/sgin-in.js"></script>
 </body>
 

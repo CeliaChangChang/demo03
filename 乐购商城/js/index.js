@@ -44,16 +44,12 @@ function lunbo(selector,boxh,w,h){
 }
 
 $(function(){
-
 lunbo('.sliderBox1',420,1000,420),
 lunbo('.sliderBox2',218,332,218),
 lunbo('.sliderBox3',334,429,334),
 lunbo('.sliderBox4',450,1000,450),
-lunbo('.sliderBox5',530,1200,530)
-
+lunbo('.sliderBox5',518,1200,518)
 })
-
-
 
 
 // 电子书模块选项卡
@@ -148,3 +144,16 @@ $("#ticket a.tic2").mouseleave(function(){
   })
  
  
+
+  //顶部下拉框
+  let topDropBox=document.querySelector("#topdropbox");
+  console.log(topDropBox);
+  window.addEventListener('scroll',function(){
+      let scrollTop=document.documentElement.scrollTop ||document.body.scrollTop
+      if (scrollTop>500) {
+        topDropBox.style.display="block";    
+          
+      }else{
+        topDropBox.style.display="none"
+      }
+  })
