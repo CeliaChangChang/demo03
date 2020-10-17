@@ -1,0 +1,106 @@
+/*-------header------ */
+header {
+    display: flex;
+    border: 1px solid #f7f7f7;
+    height: 42px;
+    align-items: center;
+    background-color: #fff;
+}
+
+header span {
+    margin: 0 10px;
+}
+ 
+header div {
+    flex: 1;
+    position: relative;
+    padding-right: 20px;
+}
+
+header div input {
+    outline: none;
+    border: none;
+    width: 100%;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    height: 30px;
+    text-indent: 30px;
+}
+
+
+header div span {
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    color: #cccccc;
+
+}
+
+/* -----main------ */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+/* ---left---- */
+main .sort-left {
+    background-color: #f8f8f8;
+    width: 22vw;
+}
+
+main .sort-left>li {
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    text-align: center;
+}
+main .sort-left>li>a {
+    color: #000;
+}
+main .sort-left>li:hover {
+    background-color: #fff;
+}
+main .sort-left>li:hover a{ 
+    color: #E43130; 
+}
+
+/* ----right----- */
+main .sort-right {
+    flex: 1;
+    overflow-y: scroll;
+    background-color: #fff;
+
+}
+main .sort-right>li {
+    display: flex;
+    flex-direction: column;
+}
+
+main .sort-right>li h3 {
+    font-size: 14px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 5px;
+}
+main .sort-right>li>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+main .sort-right>li>ul>li {
+    width: 30%;
+    margin-bottom: 10px;
+}
+main .sort-right>li>ul>li img {
+    width: 100%;
+}
+main .sort-right>li>ul>li>a>p {
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}

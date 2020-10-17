@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoppingcar</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/swiper-6.1/css/swiper-bundle.css">
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/shoppingcar.css">
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header>
+        <span class="iconfont icon-arrow-left" data-toggle="go-back"></span>
+        <h3>购物车</h3>
+    </header>
+    <!-- 主体 -->
+    <main>
+        <ul class="car-list">
+            <li>
+                <div class="choose">
+                    <input type="checkbox" id="check1" class="singlechks">
+                    <label for="check1">✔</label>
+                </div>
+                <div class="content">
+                    <div class="car-pic">
+                        <img src="./images/shop-list-img01.webp" alt="">
+                    </div>
+                    <div class="car-intro">
+                        <h3>
+                            Apple iPad 平板电脑
+                        </h3>
+                        <p class="color">
+                            颜色分类：8GB+ 128GB版
+                        </p>
+                        <p class="price">
+                            ￥<span class="singleprice">3268.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="reducebtn">-</div>
+                    <input type="text" value="1" class="count">
+                    <div class="addbtn">+</div>
+                </div>
+            </li>
+            <li>
+                <div class="choose">
+                    <input type="checkbox" id="check2" class="singlechks">
+                    <label for="check2">✔</label>
+                </div>
+                <div class="content">
+                    <div class="car-pic">
+                        <img src="./images/shop-list-img01.webp" alt="">
+                    </div>
+                    <div class="car-intro">
+                        <h3>
+                            Apple iPad 平板电脑
+                        </h3>
+                        <p class="color">
+                            颜色分类：8GB+ 128GB版
+                        </p>
+                        <p class="price">
+                            ￥<span class="singleprice">3268.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="reducebtn">-</div>
+                    <input type="text" value="1" class="count">
+                    <div class="addbtn">+</div>
+                </div>
+            </li>
+            <li>
+                <div class="choose">
+                    <input type="checkbox" id="check3" class="singlechks">
+                    <label for="check3">✔</label>
+                </div>
+                <div class="content">
+                    <div class="car-pic">
+                        <img src="./images/shop-list-img01.webp" alt="">
+                    </div>
+                    <div class="car-intro">
+                        <h3>
+                            Apple iPad 平板电脑
+                        </h3>
+                        <p class="color">
+                            颜色分类：8GB+ 128GB版
+                        </p>
+                        <p class="price">
+                            ￥<span class="singleprice">3268.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="reducebtn">-</div>
+                    <input type="text" value="1" class="count">
+                    <div class="addbtn">+</div>
+                </div>
+            </li>
+            <li>
+                <div class="choose">
+                    <input type="checkbox" id="check4" class="singlechks">
+                    <label for="check4">✔</label>
+                </div>
+                <div class="content">
+                    <div class="car-pic">
+                        <img src="./images/shop-list-img01.webp" alt="">
+                    </div>
+                    <div class="car-intro">
+                        <h3>
+                            Apple iPad 平板电脑
+                        </h3>
+                        <p class="color">
+                            颜色分类：8GB+ 128GB版
+                        </p>
+                        <p class="price">
+                            ￥<span class="singleprice">3268.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="reducebtn">-</div>
+                    <input type="text" value="1" class="count">
+                    <div class="addbtn">+</div>
+                </div>
+            </li>
+            <li>
+                <div class="choose">
+                    <input type="checkbox" id="check5" class="singlechks">
+                    <label for="check5">✔</label>
+                </div>
+                <div class="content">
+                    <div class="car-pic">
+                        <img src="./images/shop-list-img01.webp" alt="">
+                    </div>
+                    <div class="car-intro">
+                        <h3>
+                            Apple iPad 平板电脑
+                        </h3>
+                        <p class="color">
+                            颜色分类：8GB+ 128GB版
+                        </p>
+                        <p class="price">
+                            ￥<span class="singleprice">3268.00</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="reducebtn">-</div>
+                    <input type="text" value="1" class="count">
+                    <div class="addbtn">+</div>
+                </div>
+            </li>
+
+
+        </ul>
+        <!-- 底线 -->
+        <div class="bottom-line">
+            <div class="line"></div>
+            <div class="text">我也是有底线的</div>
+            <div class="line"></div>
+        </div>
+    </main>
+    <!-- 购物车结算 -->
+    <div class="shop-car">
+        <p class="total-num">
+            <input type="checkbox" id="check6" class="allchk">
+            <label for="check6">✔</label>
+            <span>已经选<i>(<i class="totalcount">0</i>)</i></span>
+        </p>
+        <p class="total-price">
+            合计:￥ <span class="allprice">0.00</span>
+        </p>
+        <p class="go-sum">
+            <a href="#">去结算</a>
+        </p>
+    </div>
+    <!-- 尾部 -->
+    <footer>
+        <div>
+            <a href="#" class="index">
+                <span class="iconfont icon-ziyuan"></span>
+                <p>首页</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="list">
+                <span class=" iconfont icon-fenlei"></span>
+                <p>分类</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="shopping-car">
+                <span class="iconfont icon-gouwuche"></span>
+                <p>购物车</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="shopping-car">
+                <span class="iconfont icon-wode"></span>
+                <p>我的</p>
+            </a>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="./lib/jquery-3.4/jquery.js"></script>
+    <script src="./lib/swiper-6.1/js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/shoppingcar.js"></script>
+
+</body>
+
+</html>

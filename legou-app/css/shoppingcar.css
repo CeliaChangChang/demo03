@@ -1,0 +1,195 @@
+/* ----header start---- */
+header {
+    display: flex;
+    line-height: 45px;
+    background-color: #fff;
+    border-bottom: 1px solid #dadada;
+}
+
+header span {
+    margin-left: 10px;
+}
+
+header h3 {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ----header end---- */
+/* ------carlist start---- */
+main {
+    background-color: #fff;
+}
+
+.car-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+    /* background-color: #fff; */
+}
+
+.car-list>li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    /* position: relative; */
+    border-bottom: 1px solid #ddd;
+}
+
+/* ------carlist end---- */
+/* ---choose--- */
+.car-list>li .choose {
+    align-self: center;
+}
+.car-list>li .choose label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #ccc;
+    color: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+.car-list>li .choose input:checked+label{
+    background-color: #E43130;
+    border: 1px solid #E43130;
+    color: #ffffff;
+}
+.car-list>li .choose input {
+    display: none;
+}
+
+
+/*--- content-- */
+.car-list>li .content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.car-list>li .content .car-pic {
+    width: 22vw;
+    height: 22vw;
+}
+
+.car-list>li .content .car-pic img {
+    width: 100%;
+
+}
+
+.car-list>li .content .car-intro h3 {
+    line-height: 30px;
+}
+
+.car-list>li .content .car-intro .color {
+    color: #999BA1;
+    font-size: 12px;
+}
+
+.car-list>li .content .car-intro .price {
+    color: #E43130;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* --right---- */
+.car-list>li .num {
+    display: flex;
+    height: 19px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.car-list>li .num div {
+    border: 1px solid #666;
+    width: 20px;
+    text-align: center;
+
+}
+
+.car-list>li .num input {
+    width: 25px;
+    margin: 0 -1px;
+    border: 1px solid #666;
+    text-align: center;
+}
+
+/* ----bootomline---- */
+main .bottom-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+main .bottom-line .text {
+    font-size: 12px;
+    color: #333;
+    margin: 0px 5px;
+
+}
+
+main .bottom-line .line {
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+/* ----shopcar start--- */
+.shop-car {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color:#fff;
+}
+.shop-car .total-num {
+    padding-left: 5px;
+}
+.shop-car .total-num label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #ccc;
+    color: transparent;
+    text-align: center;
+    cursor: pointer;
+  
+}
+.shop-car .total-num input:checked+label{
+    background-color: #E43130;
+    border: 1px solid #E43130;
+    color: #ffffff;
+}
+.shop-car .total-num input {
+    display: none;
+}
+
+.shop-car .total-price {
+    flex: 1;
+    color: #666;
+    text-align: center;
+}
+.shop-car .total-price span {
+    color: #E43130;
+}
+.shop-car .go-sum a{
+    display: inline-block;
+    height:100%;
+    line-height: 35px;
+    color: #fff;
+    background-color: #E43130;
+    padding: 0 10px;
+}

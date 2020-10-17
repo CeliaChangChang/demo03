@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none outside none
+}
+
+/* body {
+ 
+    padding: 50px 0 0;
+    background-color: #dde4e5
+} */
+
+.silder-box {
+    position: relative;
+    margin: 0 auto
+}
+
+.silder {
+    width: 957px !important;
+    margin: 0 auto
+}
+
+.silder li {
+    width: 228px;
+	height: 285px;
+}
+
+/* .silder li img {
+    width: 100%;
+    height: 100%
+} */
+
+.silder-button {
+    top: 173px;
+    width: 25px;
+    height: 54px;
+    position: absolute;
+    cursor: pointer
+}
+
+.silder-button.btl {
+    width: 42px;
+    height: 90px;
+    left: 236px;
+    top:95px;
+    background: url(../imgs/btn2.png)
+}
+
+.silder-button.btr {
+    width: 42px;
+    height: 90px;
+    right: 7px;
+    top:95px;
+    background: url(../imgs/btn1.png)
+}
+
+

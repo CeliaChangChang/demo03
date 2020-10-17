@@ -1,0 +1,352 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: MicrosoftYaHe;
+    font-size: 14px;
+
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.lg-contianer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/*--------------- 公共颜色------------ */
+.colff {
+    color: #ffffff;
+}
+
+.col9c {
+    color: #ff9c00;
+}
+
+.colfe {
+    color: #feb80f;
+}
+
+.colda {
+    color: #dadada;
+}
+
+.col6f {
+    color: #6f6f6f;
+}
+
+.col66 {
+    color: #666666;
+}
+
+.colf0 {
+    color: #ff0000;
+}
+
+.colb2 {
+    color: #b2b2b2;
+}
+
+.colf4 {
+    color: #f4f4f4;
+}
+
+.col33 {
+    color: #333333;
+}
+
+.col72 {
+    color: #ff72fd;
+}
+
+.col9f {
+    color: #9f9f9f;
+}
+
+.col06 {
+    color: #006fff;
+}
+
+.col80 {
+    color: #808080;
+}
+
+.col0d {
+    color: #ffbd0d;
+}
+
+
+/* -------公共背景颜色----------- */
+.bgdb {
+    background-color: #ffdbdb;
+}
+
+.bgac {
+    background-color: #acd0ff;
+}
+
+/* --------------公共字体------------- */
+.fs12 {
+    font-size: 12px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fs22 {
+    font-size: 22px;
+}
+
+.fs24 {
+    font-size: 24px;
+}
+
+.fs26 {
+    font-size: 26px;
+}
+
+.fs28 {
+    font-size: 28px;
+}
+
+.fs30 {
+    font-size: 30px;
+}
+
+
+.fswb {
+    font-weight: bold;
+}
+
+.fsyi {
+    font-style: italic;
+}
+
+/* ----------公共margin&padding--------- */
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.ml25 {
+    margin-left: 25px;
+}
+
+/* ----------头部--------- */
+header {
+    height: 155px;
+    /* background-color: skyblue; */
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+header .top {
+    height: 28px;
+    line-height: 28px;
+    background-color: #000000;
+}
+
+/* ----------搜索区域-------- */
+header .search-r {
+    height: 40px;
+    margin-top: 25px;
+}
+
+.searchbox>div>form {
+    width: 494px;
+    height: 38px;
+    background-color: #ffffff;
+    border: solid 2px#feb80f;
+    box-sizing: border-box;
+}
+
+.searchbox form input:first-child {
+    width: 430px;
+    height: 35px;
+    text-indent: 1em;
+
+}
+
+.searchbox form input:last-child {
+    width: 60px;
+    height: 35px;
+    background-color: #feb80f;
+    background: url(../imgs/search01.jpg) no-repeat;
+    cursor: pointer;
+}
+
+.searchbox .carorder a {
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.searchbox .carorder a:first-child {
+    margin-left: 30px;
+}
+
+.searchbox .carorder a:last-child {
+    margin: 0 105px 0px 20px;
+}
+
+.searchbox .carorder a:first-child>img {
+    vertical-align: middle;
+}
+
+.searchbox .logo {
+    width: 170px;
+    height: 90px;
+}
+
+header nav {
+    margin: 25px 0 0 286px;
+}
+
+header nav ul li a {
+    float: left;
+    color: #9f9f9f;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 32px;
+}
+
+
+
+/* --------页脚区域----------- */
+.wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+footer>ul {
+    padding-top: 50px;
+    height: 95px;
+    border-bottom: 2px solid #dadada;
+}
+
+footer>ul>li {
+    float: left;
+    width: 275px;
+    height: 60px;
+    border-right: 2px solid #dadada;
+}
+
+footer>ul>li:last-child {
+    border-right: none;
+}
+
+footer>ul>li>img {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+footer>ul>li .des {
+    margin-right: 70px;
+}
+
+footer>ul>li .des>p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #333333;
+}
+
+footer>ul>li .des>h4 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #9f9f9f;
+}
+
+/* 页脚链接 */
+footer .flow>ul {
+    float: left;
+    margin-top: 30px;
+    margin-right: 84px;
+}
+
+footer .flow>ul>li>a {
+    font-size: 16px;
+    color: #808080;
+    line-height: 28px;
+}
+
+footer .flow>ul>li:first-child {
+    font-weight: bold;
+    line-height: 34px;
+    font-size: 18px;
+    color: #333333;
+}
+
+footer .flow .qry {
+    font-size: 16px !important;
+}
+
+footer .base {
+    margin-top: 50px;
+    padding-top: 10px;
+    background-color: #f4f4f4;
+}
+
+footer .intro>p {
+    font-size: 12px;
+    color: #808080;
+    line-height: 24px;
+    text-align: center;
+}
+
+footer .intro .pic {
+    padding: 15px 300px;
+}

@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
+
+main {
+    overflow-y: scroll;
+    flex: 1;
+}
+
+/*  尾部 */
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 5px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer>div>a {
+    display: flex;
+    flex-direction: column;
+    color: #8b8b8b;
+    text-align: center;
+}
+footer>div>a>span {
+    font-size: 12px !important;
+}
+
+footer>div>a>p {
+    text-align: center;
+    line-height: 20px;
+    color: #8b8b8b;
+    font-size: 12px;
+}

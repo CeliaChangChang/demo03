@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/swiper-6.1/css/swiper-bundle.css">
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header>
+        <span class="iconfont icon-arrow-left" data-toggle="go-back"></span>
+        <div>
+            <span class="iconfont icon-sousuo"></span>
+            <input type="search" placeholder="程序员假发" id="keyword" data-toggle="$-search">
+        </div>
+        <button type="button" id="search-btn">搜索</button>
+    </header>
+    <!-- 主体 -->
+    <main>
+        <!-- 最新搜索-->
+        <div class="new-search">
+            <p>最新搜索</p>
+            <span id="delbtn" class="iconfont icon-shanchu" ></span>
+        </div>
+        <ul class="content" id="content">     
+        </ul>
+    </main>
+    <!-- 尾部 -->
+    <footer>
+        <div>
+            <a href="#" class="index">
+                <span class="iconfont icon-ziyuan"></span>
+                <p>首页</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="list">
+                <span class=" iconfont icon-fenlei"></span>
+                <p>分类</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="shopping-car">
+                <span class="iconfont icon-gouwuche"></span>
+                <p>购物车</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="shopping-car">
+                <span class="iconfont icon-wode"></span>
+                <p>我的</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="./lib/jquery-3.4/jquery.js"></script>
+    <script src="./lib/swiper-6.1/js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/search.js"></script>
+
+</body>
+
+</html>

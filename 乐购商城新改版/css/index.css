@@ -1,0 +1,335 @@
+/* -------------banner部分------------- */
+#banner {
+    height: 1140px;
+    background-color: #f4f4f4;
+    padding-top: 25px;
+}
+
+#banner .bg-pic {
+    background: url(../imgs/phone01.jpg) no-repeat;
+
+
+}
+
+#banner .navlist {
+    width: 230px;
+    height: 450px;
+    background-color: #a980c9;
+    position: relative;
+}
+
+#banner .navlist li {
+    line-height: 30px;
+}
+
+#banner .navlist li:first-child {
+    margin-top: 25px;
+}
+
+#banner .navlist li:hover>p {
+    width: 200px;
+    background-color: #ffffff;
+    border-color: #510698;
+    border-right: 0;
+    cursor: pointer;
+}
+
+#banner .navlist li>p {
+    position: relative;
+    padding-left: 30px;
+    border: 1px solid transparent;
+    z-index: 102;
+}
+
+#banner .navlist li>p>a {
+    margin-right: 15px;
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#banner .navlist li>p>span {
+    float: right;
+    color: #cccccc;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* ------二级菜单------ */
+#banner .navlist li .submenu {
+    position: absolute;
+    left: 230px;
+    top: 25px;
+    width: 580px;
+    height: 430px;
+    display: none;
+    border: 1px solid #510698;
+    background-color: #fff;
+    z-index: 101;
+}
+
+#banner .navlist li:hover .submenu {
+    display: block;
+    cursor: pointer;
+}
+
+#banner .navlist li .submenu>p {
+    margin-left: 48px;
+}
+
+#banner .navlist li .submenu .sub-main {
+    width: 480px;
+    margin-left: 48px;
+}
+
+#banner .navlist li .submenu .sub-main>h4 {
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+#banner .navlist li .submenu .sub-main>p>a {
+    color: #9f9f9f;
+}
+
+/*---------- banner秒杀区域--------- */
+#banner .cuff>li {
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+#banner .cuff>li:last-child {
+    margin-right: 0px;
+}
+
+#banner .seckill {
+    width: 230px;
+    height: 285px;
+    background: url(../imgs/seckill01.jpg);
+    /* margin-right: 15px; */
+}
+
+#banner .seckill>p:first-child {
+    margin: 35px 30px 0px 35px;
+}
+
+#banner .seckill>h4 {
+    margin: 90px 88px 0px 88px;
+}
+
+#banner .seckill>p:last-child {
+    margin: 26px 18px 40px 25px;
+}
+
+#banner .seckill>p:last-child {
+    width: 190px;
+    height: 45px;
+}
+
+#banner .seckill>p:last-child>a {
+    display: inline-block;
+    width: 36px;
+    height: 45px;
+    font-size: 24px;
+    background-color: #666666;
+    color: #ffffff;
+    line-height: 45px;
+    text-align: center;
+}
+
+#banner .seckill>p:last-child>span {
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 45px;
+    text-align: center;
+}
+
+/*-------------- 秒杀的轮播区域----------- */
+#banner .silde {
+    width: 955px;
+    height: 285px;
+    /* background-color: orange; */
+}
+
+#banner .silde>li {
+    float: left;
+    width: 228px;
+    height: 285px;
+    background-color: #ffffff;
+    margin-right: 14px;
+}
+
+#banner .silde>li:last-child {
+    margin-right: 0;
+}
+
+#banner .silde>li>img {
+    margin: 15px 15px 0 15px;
+}
+
+#banner .silde>li>p {
+    margin-left: 15px;
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+#banner .silde>li>p>span:last-child {
+    text-decoration: line-through;
+}
+
+/* ---------好物推荐------ */
+#like {
+    height: 655px;
+    /* background-color: yellowgreen; */
+}
+
+#like .text {
+    margin: 0px 450px 60px;
+    padding-top: 60px;
+    position: relative;
+
+}
+
+#like .text img {
+    vertical-align: middle;
+}
+
+#like .textcon {
+    position: absolute;
+    left: 95px;
+    bottom: -10px;
+    width: 109px;
+    height: 4px;
+    background-color: red;
+}
+
+#like .txt-left,
+.txt-right {
+    width: 585px;
+    height: 410px;
+}
+
+#like .txt-left>p:first-child {
+    line-height: 48px;
+    margin-top: 20px;
+}
+
+#like .txt-left>p:nth-child(2) {
+    line-height: 28px;
+}
+
+#like .txt-left>ul>li {
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+#like .txt-right>p:first-child {
+    line-height: 48px;
+    margin-top: 20px;
+}
+
+#like .txt-right>p:nth-child(2) {
+    line-height: 28px;
+}
+
+#like .txt-right>ul>li {
+    float: left;
+    margin-right: 20px;
+}
+
+
+/* ---------各个内容板块--------------- */
+#main {
+    padding-top: 40px;
+    height: 2700px;
+    background-color: #f4f4f4;
+}
+
+
+/*---- 服装作为公共部分---- */
+.com-title>ul>li {
+    float: right;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #808080;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.com-title>ul>li.current {
+    color: #ffbd0d;
+}
+.com-title>ul>li.current>.line {
+    width: 30px;
+    height: 2px;
+    background-color: #ffbd0d;
+    margin: 10px 20px;
+}
+
+/* ---服装分类左边----- */
+.com-left {
+    width: 260px;
+    height: 460px;
+    background-color: #ffffff;
+    margin-right: 15px;
+}
+
+.com-left>ul>li {
+    width: 70px;
+    height: 24px;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    color: #6f6f6f;
+    border: 1px solid #6f6f6f;
+    border-radius: 25px;
+    margin:7px;
+}
+/*内容中间+轮播 */
+.com-centre { 
+    margin-right: 15px;
+}
+.com-centre>img {
+    margin-top: 10px;
+}
+.com-centre .com-slide{
+    width: 455px;
+    height: 300px;
+    background-color: olive;
+}
+/* 内容右边 */
+.com-main .com-right {
+    width: 455px;
+}
+.com-main .com-right>li {
+    float: left;
+}
+.com-main .com-right>li:nth-child(1),.com-main .com-right>li:nth-child(3){
+   margin-right: 15px;
+}
+.com-main .com-right>li:nth-child(3),.com-main .com-right>li:nth-child(4){
+    margin-top: 17px;
+ }
+ /* 品牌图标 */
+ .com-main .com-brand {
+    margin-bottom: 70px;
+ }
+ .com-main .com-brand>li {
+    float: left;
+    margin-top: 10px;
+    margin-right: 6px;
+}
+.com-main .com-brand>li>img {
+    width: 128px;
+    height: 65px;
+}
+.com-main .com-brand>li:nth-child(9){
+    margin-right: 0px;
+}

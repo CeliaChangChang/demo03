@@ -1,0 +1,69 @@
+/* header */
+header .person {
+   display: flex;
+   background-color: #fff;
+   align-items: center;
+   justify-content: space-between; 
+   padding: 20px;
+   margin-bottom: 10px;
+}
+header .person img {
+    width: 60px;
+    height: 60px;
+}
+header .person div {
+    flex: 1;
+    padding-left:10px;
+}
+/* ----main--- */
+/* ---order start---- */
+main .order {
+    display: flex;
+    height: 20vw;
+    justify-content: space-around;
+    background-color: #fff;
+    align-items: center;
+    margin-bottom: 10px;
+}
+main .order div {
+
+    text-align: center;
+    font-size: 12px;
+}
+main .order div a{
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+main .order div a .iconfont {
+    font-size: 36px;
+}
+/* order-content */
+main .order-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+}
+main .order-content>li {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f7f7f7;
+    line-height: 16vw;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+main .order-content>li>span {
+    color: #ccc;
+    font-size: 24px;
+}
+main .order-content>li>p>a>span {
+    color: red;
+    font-size: 26px;
+    margin-right: 10px;
+}
+main .order-content>li>p>a {
+    color: #000000;
+}
+
+/* ---order end---- */
