@@ -1,0 +1,25 @@
+.el-header {
+    background-color: #333333;
+}
+.el-header .navbar-nav>li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.el-header .navbar-nav>li>a {
+    color: #fff;
+}
+.el-combar .el-page-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #337ab7;
+}
+.el-combar {
+    background-color: #f8f8f8 !important;
+    border-bottom:1px solid #e7e7e7 !important;
+}
+.el-combar .navbar-nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}

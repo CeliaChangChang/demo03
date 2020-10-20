@@ -1,0 +1,79 @@
+{
+  "id": "2118036",
+  "name": "test01",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3091944",
+      "name": "电话挂机",
+      "font_class": "dianhuaguaji",
+      "unicode": "e767",
+      "unicode_decimal": 59239
+    },
+    {
+      "icon_id": "7287571",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e739",
+      "unicode_decimal": 59193
+    },
+    {
+      "icon_id": "1018637",
+      "name": "电话",
+      "font_class": "tel",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "1306",
+      "name": "购物车空",
+      "font_class": "gouwuchekong",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1642010",
+      "name": "猫",
+      "font_class": "cat",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "1693378",
+      "name": "猪",
+      "font_class": "zhu",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "2121728",
+      "name": "飞机",
+      "font_class": "feiji",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "6253906",
+      "name": "iconfont icon-yonghu",
+      "font_class": "iconfonticon-yonghu",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "7229686",
+      "name": "树",
+      "font_class": "shengdanshu",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "17457923",
+      "name": "兔子-01",
+      "font_class": "tuzi-01",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}
