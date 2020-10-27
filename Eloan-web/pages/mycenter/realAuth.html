@@ -4,42 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eloan-index</title>
+    <title>Eloan-realAuth</title>
     <link rel="stylesheet" href="./lib/bootstrap-4.5.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="fonts/font_incon/iconfont.css">
-    <link rel="stylesheet" href="./css/common.min.css">
-    <!-- <link rel="stylesheet" href="./css/index.min.css"> -->
+    <link rel="stylesheet" href="fonts/font/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/account.min.css">
 </head>
 
 <body>
-    <!-- 首页顶部导航 -->
-    <header class="el-topBar">
+    <!-- 实名认证顶部导航 -->
+    <header class="el-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <span class="iconfont icon-dianhuaguaji"></span>
-                    <i>028-86261949</i>
-                </a>
                 <div class="collapse navbar-collapse" id="topMenu">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">首页</a>
                         </li>
-                        <li class="nav-item" id="login-text">
-                            <a href="./login-in.html" class="nav-link">登录</a>
-                            <!-- <a class="nav-link" href="#">小强</a> -->
+                        <li class="nav-item">
+                            <a class="nav-link el-current-user" href="#">小强</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">赶快充值</a>
+                            <a class="nav-link" href="#">账户充值</a>
                         </li>
-                        <li class="nav-item" id="reg-text">
-                            <!-- <a class="nav-link" href="#">注销</a> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">注销</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">帮助</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">联系客服</a>
                         </li>
                     </ul>
 
@@ -47,25 +39,25 @@
             </div>
         </nav>
     </header>
-    <!-- 首页nav导航 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="el-navbar">
+    <!-- 实名认证nav导航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light el-navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="">
             </a>
             <div class="collapse navbar-collapse" id="nav-second">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">我要投资</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">我要借款</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#invest">我要投资</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#borrow">我要借款</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#mycenter">个人中心</a>
+                        <a class="nav-link" href="#">个人中心</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">新手指引</a>
@@ -77,7 +69,46 @@
             </div>
         </div>
     </nav>
-    <main id="main">
+    <!-- 实名认证内容 -->
+    <main class="el-mycenter">
+        <div class="container">
+            <div class="row">
+                <!--导航菜单-->
+                <div class="col-md-3">
+                    <ul class="left-list">
+                        <li><a href="#">投资项目</a></li>
+                        <li><a href="#">借款项目</a>
+                            <ul>
+                                <li><a href="#">借款项目</a></li>
+                                <li><a href="#">还款明细</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">我的账户</a>
+                            <ul>
+                                <li><a href="#">账户信息</a></li>
+                                <li class="active"><a href="#">实名认证</a></li>
+                                <li><a href="#">银行卡管理</a></li>
+                                <li><a href="#">登录记录</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">资产详情</a>
+                            <ul>
+                                <li><a href="#">账户流水</a></li>
+                                <li><a href="#">充值明细</a></li>
+                                <li><a href="#">提现记录</a></li>
+                                <li><a href="#">收款明细</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">个人资料</a></li>
+                    </ul>
+                    <!-- 功能页面 -->
+                </div>
+                <div class="col-md-9">
+                    
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
     <!--底部链接内容-->
     <footer>
@@ -109,10 +140,10 @@
             </div>
         </div>
     </footer>
+
     <script src="./lib/jquery-3.5.1/jquery.min.js"></script>
     <script src="./lib/popper-1.16.1/popper.min.js"></script>
     <script src="./lib/bootstrap-4.5.3/js/bootstrap.min.js"></script>
-    <script src="./js/config.js"></script>
     <script src="./js/index.js"></script>
 </body>
 

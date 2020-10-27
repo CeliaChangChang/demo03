@@ -1,0 +1,73 @@
+.el-mycenter {
+    .left-list {
+        list-style: none;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 0;
+        overflow: hidden;
+
+        >li {
+            background: #F5F5F5;
+            border: 1px solid #ddd;
+            margin: -1px;
+            overflow: hidden;
+
+            >a {
+                display: inline-block;
+                padding: 10px 15px;
+                background: #F5F5F5;
+                text-decoration: none;
+                color: #337ab7;
+                font-size: 14px;
+            }
+
+            >ul {
+                list-style: none;
+                background-color: #fff;
+                border-top: 1px solid #ddd;
+                padding: 0px !important;
+
+                >li {
+                    line-height: 40px;
+
+                    >a {
+                        color: #337ab7;
+                        text-decoration: none;
+                        padding-left: 40px;
+
+                        &:hover {
+                            color: #337ab7;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &.active {
+                        background-color: #467cac;
+
+                        a {
+                            color: #fff;
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+    }
+   
+}
+
+
+//右边的公共标题
+.common-r { 
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    .my-title {      
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+}
+}

@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eloan-invest</title>
+    <title>Eloan-login-in</title>
     <link rel="stylesheet" href="./lib/bootstrap-4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/font/iconfont.css">
     <link rel="stylesheet" href="./css/common.min.css">
+    <link rel="stylesheet" href="./css/login-in.min.css">
 </head>
 
 <body>
-    <!-- 首页顶部导航 -->
-    <header class="el-topBar">
-        <nav class="navbar navbar-expand-lg">
+    <!-- 登录顶部导航 -->
+    <header class="el-topBar el-header">
+        <nav class="navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <!-- <a class="navbar-brand" href="#">
                     <span class="iconfont icon-dianhuaguaji"></span>
                     <i>028-86261949</i>
-                </a>
+                </a> -->
                 <div class="collapse navbar-collapse" id="topMenu">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">首页</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">小强</a>
+                            <a class="nav-link" href="#">登录</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">赶快充值</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">注销</a>
+                            <a class="nav-link" href="#">快速注册</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">帮助</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">联系客服</a>
-                        </li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
     </header>
-    <!-- 首页nav导航 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light el-navbar">
+    <!-- 登录nav导航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light el-combar">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a href="#">
                 <img src="./images/logo.png" alt="">
             </a>
             <div class="collapse navbar-collapse" id="nav-second">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">首页</a>
-                    </li>
                     <li class="nav-item">
+                        <span class="el-page-title">
+                            用户登录
+                        </span>
+                    </li>
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">我要投资</a>
                     </li>
                     <li class="nav-item">
@@ -71,13 +65,46 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">关于我们</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
- 
-
+    <!--登录内容  -->
+    <main>
+        <div class="container">
+            <div class="login">
+                <div class="login-title">
+                    <p>用户注册</p>
+                </div>
+                <div class="login-content row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5">
+                        <form>
+                            <p>请输入用户名和密码</p>
+                            <div class="form-group row">
+                                <label for="username" class="col-sm-2 title">用户名</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="username" autofocus  placeholder="请输入用户名">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="pwd" class="col-sm-2 title">密&emsp;码</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn reg-btn" id="login-btn">登录</button>
+                                <a href="#" class="register-link">新用户，马上注册</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!--底部链接内容-->
     <footer>
         <div class="container">
@@ -108,11 +135,14 @@
             </div>
         </div>
     </footer>
-
     <script src="./lib/jquery-3.5.1/jquery.min.js"></script>
     <script src="./lib/popper-1.16.1/popper.min.js"></script>
     <script src="./lib/bootstrap-4.5.3/js/bootstrap.min.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- 配置文件 -->
+    <script src="./js/config.js"></script>
+   <!-- 自己的js -->
+    <script src="./js/login-in.js"></script>
+
 </body>
 
 </html>

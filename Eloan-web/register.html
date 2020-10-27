@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eloan-login-in</title>
+    <title>Eloan-register</title>
     <link rel="stylesheet" href="./lib/bootstrap-4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/font/iconfont.css">
     <link rel="stylesheet" href="./css/common.min.css">
-    <link rel="stylesheet" href="./css/login-in.css">
+    <link rel="stylesheet" href="./css/register.min.css">
 </head>
 
 <body>
-    <!-- 登录顶部导航 -->
+    <!-- 注册顶部导航 -->
     <header class="el-topBar el-header">
         <nav class="navbar-expand-lg">
             <div class="container">
@@ -34,15 +34,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">帮助</a>
                         </li>
-
-
                     </ul>
-
                 </div>
             </div>
         </nav>
     </header>
-    <!-- 登录nav导航 -->
+    <!-- 注册nav导航 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light el-combar">
         <div class="container">
             <a href="#">
@@ -74,33 +71,75 @@
             </div>
         </div>
     </nav>
-    <!--登录内容  -->
+    <!--注册内容  -->
     <main>
         <div class="container">
-            <div class="userlogin">
-                <p>用户注册</p>
-                <div class="row">
+            <div class="register">
+                <div class="register-title">
+                    <p>用户注册</p>
+                </div>
+                <div class="register-content row">
                     <div class="col-md-3"></div>
-                    <div class="col-md-5">
-                        <P class="">请输入用户名和密码</P>
-                        <form>
-                            <label>
-                                用户名 <input type="text">
-                            </label>
-                            <label>
-                                密码 <input type="password" id="pwd">
-                            </label>
-                        </form>
+                    <div class="col-md-6">
+            
+                            <p class="con-title">请填写注册信息，点击“提交注册”即可完成注册！</p>
+                            <div class="form-group row h75">
+                                <label class="col-sm-2 title text-right">用户名</label>
+                                <div class="col-sm-10 row">
+                                    <input type="text" 
+                                    class="form-control" id="username" placeholder="中文、英文长度2-12位">
+                                    <!-- span用于显示格式不正确 -->
+                                    <span class="text-danger"></span>
+                                    <!-- p用于提示操作 -->
+                                    <p class="text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="form-group row h75">
+                                <label class="col-sm-2  title text-right">昵&nbsp;&nbsp;称</label>
+                                <div class="col-sm-10 row">
+                                    <input type="text" class="form-control" id="nickname"  placeholder="中文、英文长度2-12位">
+                                    <span class="text-danger"></span>
+                                    <p class="text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="form-group row h75">
+                                <label for="pwd" class="col-sm-2 title text-right">密&emsp;码</label>
+                                <div class="col-sm-10 row">
+                                    <input type="password" class="form-control" id="pwd" placeholder="数字、英文、下划线长度6-12位">
+                                    <span class="text-danger"></span>
+                                    <p class="text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="form-group row h75">
+                                <label for="pwd" class="col-sm-2 title text-right">确认密码</label>
+                                <div class="col-sm-10 row">
+                                    <input type="password" class="form-control" id="repwd" placeholder="请确认密码">
+                                    <span class="text-danger"></span>
+                                    <p class="text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="form-group row h75">
+                                <label for="pwd" class="col-sm-2 title text-right">邮&nbsp;&nbsp;箱</label>
+                                <div class="col-sm-10 row">
+                                    <input type="text" class="form-control" id="email" placeholder="请设置邮箱(eg:xx@xx.com)">
+                                    <span class="text-danger"></span>
+                                    <p class="text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn reg-btn" id="reg-btn">同意协议并注册</button>
+                                <a href="#" class="login-link">已有账号，马上登录</a>
+                                <p class="re-info"><a href="#">《使用协议说明书》</a></p>
+                            </div>
+                            <div class="col-md-3"></div>
+                     
                     </div>
-                    <div class="col-md-4"></div>
+                    <!-- <div class="col-md-3"></div> -->
                 </div>
             </div>
         </div>
     </main>
-
-
-
-    <!--底部链接内容-->
+    <!--注册底部链接内容-->
     <footer>
         <div class="container">
             <div class="row">
@@ -135,6 +174,8 @@
     <script src="./lib/popper-1.16.1/popper.min.js"></script>
     <script src="./lib/bootstrap-4.5.3/js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/register.js"></script>
 </body>
 
 </html>

@@ -137,6 +137,7 @@ body {
     margin-top: 10px;
     color: #337ab7;
 }
+/* ---table--- */
 
 .el-table {
     width: 100%;
@@ -160,13 +161,14 @@ th {
     padding: 8px;
 }
 
-.el-table tbody tr:hover {
+/* .el-table tbody tr:hover {
     background-color: rgba(227, 233, 233, 0.904);
-}
+} */
 
 .el-table tbody .text-info {
     color: #31708f;
 }
+/* --table--- */
 
 .el-new-list ul {
     padding: 0;
@@ -205,4 +207,57 @@ footer div p a {
 /* 图片占用宽度100% */
 .pic {
     width: 100%;
+}
+
+
+/* 登录和注册的公共部分 */
+.el-header {
+    background-color: #333333;
+}
+/* new */
+.el-header .navbar {
+    padding: 0px !important;
+}
+
+.el-header #topMenu>ul>li a:hover {
+    color: #00a8ff;
+    text-decoration: underline;
+}
+.el-header .el-current-user{
+    color: #00a7ff !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* new */
+
+
+.el-header .navbar-nav>li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.el-header .navbar-nav>li>a {
+    color: #fff;
+}
+
+
+
+
+.el-combar {
+    background-color: #f8f8f8 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+.el-combar .el-page-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #337ab7;
+}
+
+
+.el-combar .navbar-nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
 }

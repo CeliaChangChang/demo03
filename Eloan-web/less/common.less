@@ -2,7 +2,6 @@
 body {
     font: 14px/1.5 "Verdana", "微软雅黑", YaHei, tahoma, arial, Hiragino Sans GB, "宋体"
 }
-
 //header
 .el-topBar {
     background-color: #222222;
@@ -45,12 +44,11 @@ body {
         }
     }
 }
-
-.el-navbar {
+//el-navbar
+#el-navbar {
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
     border-bottom: 1px solid #e7e7e7;
-
     .navbar-nav {
         li {
             a {
@@ -66,13 +64,10 @@ body {
                 }
             }
         }
-
         li.active {
             a {
-                &:focus {
-                    background-color: #e7e7e7;
+                    background-color: #e7e7e7 !important;
                     color: #555 !important;
-                }
             }
         }
     }
@@ -92,8 +87,96 @@ footer {
             }
         }
     }
-
     .pic {
         width: 100%;
+    }
+}
+
+//login and register topbar
+.el-header {
+    background-color: #333333;
+
+    .navbar {
+        padding: 0px !important;
+    }
+
+    #topMenu {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: #00a8ff;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .el-current-user {
+        color: #00a7ff !important;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        >li {
+            margin-left: 10px;
+            margin-right: 10px;
+            >a {
+                color: #fff;  
+            }
+        }
+    }
+
+}
+
+//login and register nav
+.el-combar {
+    background-color: #f8f8f8 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+
+    .el-page-title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 20px;
+        color: #337ab7;
+    }
+
+    .navbar-nav {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+}
+
+//el-table 
+.el-table {
+    width: 100%;
+    margin-bottom: 15px;
+
+    thead {
+        th {
+            color: #999999;
+            border-bottom: 2px solid #ddd;
+            padding: 10px;
+        }
+    }
+
+    tbody {
+        tr {
+            border-top: 1px solid #ddd;
+
+            td,
+            th {
+                font-size: 16px;
+                vertical-align: middle;
+                padding: 8px;
+            }
+        }
+
+        .text-info {
+            color: #31708f;
+        }
     }
 }

@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="./css/borrow_apply.min.css">
+<script src="../../js/borrow_apply.js"></script>
+<!-- 信用借款内容 -->
+<div class="el-tip-info">
+    <h3>信用借款</h3>
+    <p>
+        <span class="text-info">授信额度：</span><span class="text-danger">2000 </span>
+        &emsp;&emsp;&emsp;
+        <span class="text-info">可借金额：</span><span class="text-danger">2000</span>
+    </p>
+</div>
+<div class="page-header lead">
+    借款信息
+    <label class="label label-primary" id="borrow-brand"></label>
+</div>
+<div class="el-borrow-form">
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>借款金额</span></label>
+        <div class="col-sm-3 input-group">
+            <input type="number" id="borrowmoney" class="form-control" placeholder="请输入eg:0.00">
+            <span class="input-group-addon">元</span>
+        </div>
+        <p class="text-danger"></p>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>借款利息</span></label>
+        <div class="col-sm-3 input-group">
+            <input class="form-control" name="currentRate" id="interest" placeholder="请输入eg:0.00"/>
+            <span class="input-group-addon">%</span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>借款期限</span></label>
+        <div class="col-sm-3 input-group">
+            <select class="form-control" name="monthes2Return" id="borrowtime">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+            </select>
+            <span class="input-group-addon">月</span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 control-label text-right title">
+            还款方式
+        </label>
+        <label class="radio-inline">
+            <input type="radio" value="0" checked="checked" name="repaytype" />
+            按月分期
+        </label>
+        <label class="radio-inline">
+            <input type="radio" value="1" name="repaytype" />
+            按月到期
+        </label>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>最小投标</span></label>
+        <div class="col-sm-3 input-group">
+            <input type="number" class="form-control" id="minbid" placeholder="请输入eg:0.00"/>
+            <span class="input-group-addon">元</span>
+        </div>
+        <p class="text-danger"></p>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>投标奖金</span></label>
+        <div class="col-sm-3 input-group">
+            <input type="number" class="form-control" value="0" id="bouns" placeholder="请输入eg:0.00"/>
+            <span class="input-group-addon">%</span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>招标天数</span></label>
+        <div class="col-sm-3 input-group">
+            <select class="form-control" name="monthes2Return" id="days">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <span class="input-group-addon">天</span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>借款标题</span></label>
+        <div class="col-sm-6 input-group">
+            <input class="form-control" name="title" id="title" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label title text-right"><span>借款描述</span></label>
+        <div class="col-sm-6 input-group">
+            <textarea name="description" rows="4" class="form-control" id="info" style="resize: none;"></textarea>
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-success reg-btn" id="borrow-btn">提交申请</button>
+    </div>
+</div>
+<div class="el-borrow-form-tip">
+    <h4>相关费用</h4>
+    <p>
+        <span class="text-info">利息</span>
+        <span class="el-borrow-cost" id="">--</span>
+    </p>
+    <p>
+        <span class="text-info">奖金</span>
+        <span class="el-borrow-cost" id="">--</span>
+    </p>
+    <p>
+        <span class="text-info">管理费</span>
+        <span class="el-borrow-cost" id="">--</span>
+    </p>
+</div>

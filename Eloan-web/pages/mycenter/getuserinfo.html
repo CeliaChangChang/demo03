@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="../../css/getuserinfo.min.css">
+<script src="../../js/getuserinfo.js"></script>
+<script src="../../lib/echarts-4.9.0/echarts.min.js"></script>
+<!-- 账户信息内容 -->
+    <!-- 内容的上边 -->
+    <div class="r-header">
+        <img src="./images/head_icon.jpg" alt="" class="r-img">
+        <div class="r-info">
+            <p>
+                昵&emsp;称：<span id="nickname"></span>
+            </p>
+            <p>
+                用户名：<span id="username"></span>
+            </p>
+            <p>
+                最后登录时间：<span id="lastlogintime"></span>
+            </p>
+        </div>
+    </div>
+    <!-- 内容的下边 -->
+    <div class="r-body">
+        <!-- 金额 -->
+        <div class="total-amount">
+            <div>总金额:<span id="totalmoney"></span></div>
+            <div> 可用金额:<span id="usablemoney"></span></div>
+            <div>冻结金额:<span id="blockedmoney"></span></div>
+        </div>
+        <!-- 按钮 -->
+        <div class="cont-btn">
+            <a href="../../recharge.html" class="btn btn-primary btn-lg">账户充值</a>
+            <a href="#" class="btn btn-danger btn-lg">账户提现</a>
+        </div>
+        <div id="echars">
+
+        </div>
+        <div class="identification">
+            <!-- 实名认证 -->
+            <div>
+                <div class="approve">
+                    <div>
+                        <img src="./images/shiming.png" alt="">
+                    </div>
+                    <div>
+                        <h5>
+                            实名认证
+                        </h5>
+                        <p>
+                            未认证
+                            <a href="#">马上认证</a>
+                        </p>
+                    </div>
+                </div>
+                <p> 实名认证之后才能在平台投资</p>
+            </div>
+            <!-- 手机认证 -->
+            <div>
+                <div class="approve">
+                    <div>
+                        <img src="./images/shouji.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5> 手机认证</h5>
+                        <p>已认证<a href="#">查看</a></p>
+                    </div>
+                </div>
+                <p>可以收到系统操作信息,并增加使用安全性</p>
+            </div>
+            <!-- 邮箱认证 -->
+            <div>
+                <div class="approve">
+                    <div><img src="./images/youxiang.jpg" alt=""></div>
+                    <div>
+                        <h5> 邮箱认证</h5>
+                        <p>已认证<a href="#">查看</a></p>
+                    </div>
+                </div>
+                <p>您可以设置邮箱来接收重要信息</p>
+            </div>
+            <!-- VIP会员 -->
+            <div>
+                <div class="approve">
+                    <div><img src="./images/baozhan.jpg" alt=""></div>
+                    <div>
+                        <h5>VIP会员</h5>
+                        <p>普通用户<a href="#">查看</a></p>
+                    </div>
+                </div>
+                <p>VIP会员，让你更快捷的投资</p>
+            </div>
+        </div>
+    </div>
